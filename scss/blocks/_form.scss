@@ -1,0 +1,131 @@
+.form_content p {
+    max-width: 698px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.form {
+    
+    background-color: #010101;
+    padding-top: 93px;
+    padding-bottom: 230px;
+    &_container{
+        width: 1300px;
+        margin: 0 auto;
+    }
+}
+.form_container {
+
+    margin: auto;
+  
+    background-color: #010101;
+}
+
+.form_content h2 {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 61px;
+    margin-bottom: 60px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 420px;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 90px;
+}
+
+#name,
+#phone,
+#email {
+    background-color: #010101;
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #FF0000;
+    color: white;
+    padding: 19px 53px;
+    margin-top: 35px;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+textarea {
+    width: 520px;
+    padding: 13px;
+    max-width: 521px;
+    height: 190px;
+    max-height: 191px;
+    background-color: #010101;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+@media (max-width: 800px) {
+    .form_container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .form_content h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .form_content p {
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input[type="submit"] {
+        margin-top: 25px;
+        padding: 15px 40px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+@media screen and (max-width:1300px){
+    .form_container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .form_container{
+        width: 100%;
+        margin-top: 500px;
+    }
+}

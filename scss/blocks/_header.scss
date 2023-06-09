@@ -1,0 +1,100 @@
+.header{
+    margin: 0 auto;
+    background-color: #151515;
+    &--nav{
+        width: 1300px;
+        height: 85px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        &-logo{
+            width: 15%;}
+        &-list{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__item{
+                font-family: 'Tenor Sans';
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding: 0 4px;
+                
+            }
+            &__item:hover{
+                text-decoration-style: dashed;
+                color: #FF0000;
+            }
+        }
+        &-extra{
+        
+            width: 36%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 27px;
+                color: #FFFFFF;
+               text-decoration: none;
+                
+                p{font-weight: 400;
+                    font-size: 15px;
+                    line-height: 18px;}
+                i{margin-right: 5px;}
+            }
+            .menu{
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1300px){
+    .header{
+        &--nav{
+            width: 100%;
+        }
+     }
+}
+@media screen and (max-width:800px){
+    .header{
+        &--nav{
+            width: 100%;
+            &-logo{
+                width: 35%;
+            }
+            &-list{
+                display: none;
+            }
+            &-extra{
+                width: 65%;
+                .menu{display: block;}
+                a{p{display: none;}}
+            }
+        }
+     }
+}
+@media screen and (max-width:500px){
+    .header{
+        &--nav{
+            width: 100%;
+            &-extra{
+                width: 60%;
+                a{  font-size: 18px;
+                    line-height: 22px;
+                i{display: none;}}
+            }
+          
+        }
+     }
+}
